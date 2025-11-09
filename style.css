@@ -92,13 +92,13 @@ input:focus:invalid {
   outline-color: var(--primary);
 }
 
-inpu[type="radio"] {
+input[type="radio"] {
   outline: none;
 }
 
 select:focus {
   outline-color: var(--primary);
-
 }
+
 
 

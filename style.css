@@ -92,7 +92,7 @@ input:focus:invalid {
   outline-color: var(--primary);
 }
 
-#gender {
+inpu[type="radio"] {
   outline: none;
 }
 
@@ -100,4 +100,5 @@ select:focus {
   outline-color: var(--primary);
 
 }
+
 

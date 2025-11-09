@@ -1,0 +1,105 @@
+:root {
+  --primary: #05ad73;
+  --secondary: #03704a;
+  --valid: #50ebb4;
+  --invalid: #eb6c50;
+  --border: #ccc;
+  --bg: #eeeded;
+  --card-bg: #f9f9f9;
+  --text: #4a4a4a;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--bg);
+  padding-block-start: 0;
+}
+
+input,
+button,
+select {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.5rem;
+  outline: 1px solid transparent;
+}
+
+#signup-form {
+  text-align: center;
+  margin-bottom: 1rem;
+  background-color: var(--primary);
+  padding: 1rem;
+  color: var(--bg);
+}
+
+#card-details {
+  display: grid;
+  grid-column-gap: 0.8rem;
+  grid-auto-flow: column;
+  grid-template-columns: max-content 1fr;
+  grid-template-rows: max-content max-content;
+}
+
+button {
+  background: var(--primary);
+  color: var(--bg);
+  cursor: pointer;
+}
+
+button:hover {
+  background: var(--secondary);
+}
+
+label {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+}
+
+form {
+  display: grid;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 350px;
+  gap: 1.5rem;
+  margin: auto;
+  background: var(--card-bg);
+}
+
+.form-group {
+  display: grid;
+}
+
+input:required:empty {
+  outline-color: rgb(140, 140, 140, 0);
+}
+
+input:not(:placeholder-shown):invalid {
+  outline-color: var(--invalid);
+}
+
+input:not(:placeholder-shown):valid,
+select:not(:placeholder-shown):valid {
+  outline-color: var(--valid);
+}
+
+input:focus:invalid {
+  outline-color: var(--primary);
+}
+
+#gender {
+  outline: none;
+}
+
+select:focus {
+  outline-color: var(--primary);
+}

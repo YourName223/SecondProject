@@ -93,14 +93,15 @@ input:focus:invalid {
 }
 
 input[type="radio"] {
-  width: 25px;
-  height: 25px;
+  width: 40px;
+  height: 40px;
   outline: none;
 }
 
 select:focus {
   outline-color: var(--primary);
 }
+
 
 
 

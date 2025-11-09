@@ -79,10 +79,6 @@ form {
   display: grid;
 }
 
-input:required:empty {
-  outline-color: rgb(140, 140, 140, 0);
-}
-
 input:not(:placeholder-shown):invalid {
   outline-color: var(--invalid);
 }
@@ -104,3 +100,4 @@ select:focus {
   outline-color: var(--primary);
 
 }
+

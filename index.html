@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <title>Kløverly Sign up</title>
-        <link rel="stylesheet" href="style.css"></link>
-    </head>
-    <body>
-        <div id="signup-form">
+<head>
+    <meta charset="UTF-8" />
+    <title>Kløverly Sign up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="signup-form">
         <h2>☘︎ Kløverly Sign up</h2>
-        </div>
-        
+    </div>
+
+    <main>
         <form action="/Signup" method="post">
-            
 
             <div class="form-group">
                 <label for="name">Citizen name</label>
-                <input type="text" id="name" name="name" required placeholder="Wendy Bobsen " minlength="2" maxlength="50"/>
+                <input type="text" id="name" name="name" required placeholder="Wendy Bobsen" minlength="2" maxlength="50"/>
             </div>
 
             <div class="form-group">
@@ -25,51 +25,42 @@
 
             <div class="form-group">
                 <label>Gender</label>
-    <label>
-      <input type="radio" name="gender" value="female"/>
-      Female
-    </label>
-
-    <label>
-      <input type="radio" name="gender" value="male"/>
-      Male
-    </label>
-     
-    <label>
-      <input type="radio" name="gender" value="other"/>
-      Other
-    </label>
-  </div>
-  
-
-</div>
-
-            <div class="form-group">
-             <label for="Email">Email</label>  
-             <input type="email" id="email" name="email" placeholder="navn@eksempel.dk" required/>
-            </div>
-             
-
-
-              <div class="form-group">
-                <label for="Username">Username</label>
-                <input type="text" id="username" name="username"  placeholder="Wendy1234" required minlength="2" maxlength="50"/>
+                <label>
+                    <input type="radio" name="gender" value="female"/>
+                    Female
+                </label>
+                <label>
+                    <input type="radio" name="gender" value="male"/>
+                    Male
+                </label>
+                <label>
+                    <input type="radio" name="gender" value="other"/>
+                    Other
+                </label>
             </div>
 
-             
             <div class="form-group">
-                <label for="Password">Password</label>
+                <label for="email">Email</label>  
+                <input type="email" id="email" name="email" placeholder="navn@eksempel.dk" required/>
+            </div>
+
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Wendy1234" required minlength="2" maxlength="50"/>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
                 <input type="text" id="password" name="password" placeholder="******" required minlength="6"/>
             </div>
 
-              <div class="form-group">
-                <label for="Password">Confirm Password</label>
-                <input type="text" id="password" name="password" placeholder="******" required minlength="6"/>
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="text" id="confirm-password" name="confirm-password" placeholder="******" required minlength="6"/>
             </div>
-               
-            </div>
+
             <button>Join Kløverly!</button>
         </form>
-    </body>
-
+    </main>
+</body>
 </html>

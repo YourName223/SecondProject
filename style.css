@@ -1,6 +1,6 @@
 :root {
-  --primary: #05ad73;
-  --secondary: #03704a;
+  --primary: #03704a;
+  --secondary: #05ad73;
   --valid: #50ebb4;
   --invalid: #eb6c50;
   --border: #ccc;
@@ -102,4 +102,5 @@ input:focus:invalid {
 
 select:focus {
   outline-color: var(--primary);
+
 }
